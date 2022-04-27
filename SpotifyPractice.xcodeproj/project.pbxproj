@@ -26,6 +26,9 @@
 		B3B702732818EBE10002ACF4 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B702722818EBE10002ACF4 /* AuthManager.swift */; };
 		B3B702752818EC3D0002ACF4 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B702742818EC3D0002ACF4 /* APICaller.swift */; };
 		B3B702772818EC570002ACF4 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B702762818EC570002ACF4 /* HapticManager.swift */; };
+		B3B702792818ECCA0002ACF4 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B702782818ECCA0002ACF4 /* Playlist.swift */; };
+		B3B7027B2818ECDA0002ACF4 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B7027A2818ECDA0002ACF4 /* AudioTrack.swift */; };
+		B3B7027D2818ECF70002ACF4 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B7027C2818ECF70002ACF4 /* Artist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		B3B702722818EBE10002ACF4 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		B3B702742818EC3D0002ACF4 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		B3B702762818EC570002ACF4 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		B3B702782818ECCA0002ACF4 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		B3B7027A2818ECDA0002ACF4 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
+		B3B7027C2818ECF70002ACF4 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 		B3B702552818E7610002ACF4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B3B702782818ECCA0002ACF4 /* Playlist.swift */,
+				B3B7027A2818ECDA0002ACF4 /* AudioTrack.swift */,
+				B3B7027C2818ECF70002ACF4 /* Artist.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -250,16 +259,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B7025F2818EAA50002ACF4 /* SearchViewController.swift in Sources */,
+				B3B702792818ECCA0002ACF4 /* Playlist.swift in Sources */,
 				B3B702732818EBE10002ACF4 /* AuthManager.swift in Sources */,
 				B3B702772818EC570002ACF4 /* HapticManager.swift in Sources */,
 				B3B702462818E6AE0002ACF4 /* HomeViewController.swift in Sources */,
 				B3B7026B2818EB3F0002ACF4 /* ProfileViewController.swift in Sources */,
 				B3B702422818E6AE0002ACF4 /* AppDelegate.swift in Sources */,
 				B3B702672818EB1D0002ACF4 /* WelcomViewController.swift in Sources */,
+				B3B7027B2818ECDA0002ACF4 /* AudioTrack.swift in Sources */,
 				B3B702652818EB0F0002ACF4 /* AuthViewController.swift in Sources */,
 				B3B702442818E6AE0002ACF4 /* SceneDelegate.swift in Sources */,
 				B3B702612818EABC0002ACF4 /* LibraryViewController.swift in Sources */,
 				B3B7026F2818EB5C0002ACF4 /* PlaylistViewController.swift in Sources */,
+				B3B7027D2818ECF70002ACF4 /* Artist.swift in Sources */,
 				B3B7025D2818EA2C0002ACF4 /* TabBarViewCollectionViewCell.swift in Sources */,
 				B3B7026D2818EB4F0002ACF4 /* PlayerViewController.swift in Sources */,
 				B3B702712818EB740002ACF4 /* SearchResultViewController.swift in Sources */,
