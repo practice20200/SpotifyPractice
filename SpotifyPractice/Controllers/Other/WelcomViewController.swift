@@ -11,7 +11,8 @@ class WelcomViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .green
+        title = "Spotify"
         // Do any additional setup after loading the view.
     }
     
