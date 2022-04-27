@@ -56,15 +56,71 @@
 		B3B702402818E6AE0002ACF4 /* SpotifyPractice */ = {
 			isa = PBXGroup;
 			children = (
-				B3B702412818E6AE0002ACF4 /* AppDelegate.swift */,
-				B3B702432818E6AE0002ACF4 /* SceneDelegate.swift */,
-				B3B702452818E6AE0002ACF4 /* ViewController.swift */,
-				B3B702472818E6AE0002ACF4 /* Main.storyboard */,
-				B3B7024A2818E6B30002ACF4 /* Assets.xcassets */,
-				B3B7024C2818E6B30002ACF4 /* LaunchScreen.storyboard */,
+				B3B7025B2818E7BE0002ACF4 /* Resources */,
+				B3B702592818E79D0002ACF4 /* Utils */,
+				B3B702582818E78B0002ACF4 /* Controllers */,
+				B3B702572818E7740002ACF4 /* Views */,
+				B3B702562818E76A0002ACF4 /* ViewModels */,
+				B3B702552818E7610002ACF4 /* Models */,
 				B3B7024F2818E6B30002ACF4 /* Info.plist */,
 			);
 			path = SpotifyPractice;
+			sourceTree = "<group>";
+		};
+		B3B702552818E7610002ACF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3B702562818E76A0002ACF4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B3B702572818E7740002ACF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B3B702582818E78B0002ACF4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3B702452818E6AE0002ACF4 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B3B702592818E79D0002ACF4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B3B702412818E6AE0002ACF4 /* AppDelegate.swift */,
+				B3B702432818E6AE0002ACF4 /* SceneDelegate.swift */,
+				B3B7025A2818E7A60002ACF4 /* Monagers */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B3B7025A2818E7A60002ACF4 /* Monagers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Monagers;
+			sourceTree = "<group>";
+		};
+		B3B7025B2818E7BE0002ACF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3B7024A2818E6B30002ACF4 /* Assets.xcassets */,
+				B3B702472818E6AE0002ACF4 /* Main.storyboard */,
+				B3B7024C2818E6B30002ACF4 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
