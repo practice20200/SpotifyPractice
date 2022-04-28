@@ -9,6 +9,11 @@ import Foundation
 final class AuthManger{
     static let shared = AuthManger()
     
+    struct Constants {
+        static let clientID = "23de831c20724d2fb8cc9c14c846d98a"
+    static let clientSecret = "3e0a93ea05dc447b86067cfa0e55b9e8 "
+    }
+    
     private init() {}
     
     var isSignedIn: Bool {
