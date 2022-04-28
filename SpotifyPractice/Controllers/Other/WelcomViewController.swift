@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Elements
 
 class WelcomViewController: UIViewController {
 

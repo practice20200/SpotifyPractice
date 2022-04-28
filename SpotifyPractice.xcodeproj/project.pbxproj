@@ -30,6 +30,7 @@
 		B3B7027B2818ECDA0002ACF4 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B7027A2818ECDA0002ACF4 /* AudioTrack.swift */; };
 		B3B7027D2818ECF70002ACF4 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B7027C2818ECF70002ACF4 /* Artist.swift */; };
 		B3C2C735281B060F000CB960 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2C734281B060F000CB960 /* Extension.swift */; };
+		B3C2C738281B06E4000CB960 /* Elements in Frameworks */ = {isa = PBXBuildFile; productRef = B3C2C737281B06E4000CB960 /* Elements */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C2C738281B06E4000CB960 /* Elements in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +208,9 @@
 			dependencies = (
 			);
 			name = SpotifyPractice;
+			packageProductDependencies = (
+				B3C2C737281B06E4000CB960 /* Elements */,
+			);
 			productName = SpotifyPractice;
 			productReference = B3B7023E2818E6AE0002ACF4 /* SpotifyPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -234,6 +239,9 @@
 				Base,
 			);
 			mainGroup = B3B702352818E6AE0002ACF4;
+			packageReferences = (
+				B3C2C736281B06E4000CB960 /* XCRemoteSwiftPackageReference "ElementKit" */,
+			);
 			productRefGroup = B3B7023F2818E6AE0002ACF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -496,6 +504,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3C2C736281B06E4000CB960 /* XCRemoteSwiftPackageReference "ElementKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/practice20200/ElementKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3C2C737281B06E4000CB960 /* Elements */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3C2C736281B06E4000CB960 /* XCRemoteSwiftPackageReference "ElementKit" */;
+			productName = Elements;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3B702362818E6AE0002ACF4 /* Project object */;
 }
