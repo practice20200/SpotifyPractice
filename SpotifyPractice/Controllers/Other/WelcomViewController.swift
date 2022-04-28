@@ -35,10 +35,17 @@ class WelcomViewController: UIViewController {
     
     @objc func signInHandler(){
         let vc = AuthViewController()
+        vc.completion = { [weak self] success in
+            DispatchQueue.main.async {
+                self?.handleSignIn(success: success)
+            }
+        }
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
     }
     
-
+    private func handleSignIn(success: Bool){
+        
+    }
 
 }

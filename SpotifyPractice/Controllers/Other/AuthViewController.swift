@@ -10,6 +10,8 @@ import WebKit
 
 class AuthViewController: UIViewController,WKNavigationDelegate {
     
+    public var completion : ((Bool) -> Void)?
+    
     private let webView: WKWebView = {
         let prefs = WKWebpagePreferences()
         prefs.allowsContentJavaScript = true
@@ -19,6 +21,8 @@ class AuthViewController: UIViewController,WKNavigationDelegate {
         let webView = WKWebView(frame: .zero, configuration: config)
         return webView
     }()
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
