@@ -29,6 +29,7 @@
 		B3B702792818ECCA0002ACF4 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B702782818ECCA0002ACF4 /* Playlist.swift */; };
 		B3B7027B2818ECDA0002ACF4 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B7027A2818ECDA0002ACF4 /* AudioTrack.swift */; };
 		B3B7027D2818ECF70002ACF4 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B7027C2818ECF70002ACF4 /* Artist.swift */; };
+		B3C2C735281B060F000CB960 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2C734281B060F000CB960 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		B3B702782818ECCA0002ACF4 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		B3B7027A2818ECDA0002ACF4 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		B3B7027C2818ECF70002ACF4 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		B3C2C734281B060F000CB960 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				B3B702412818E6AE0002ACF4 /* AppDelegate.swift */,
 				B3B702432818E6AE0002ACF4 /* SceneDelegate.swift */,
 				B3B7025A2818E7A60002ACF4 /* Monagers */,
+				B3C2C734281B060F000CB960 /* Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				B3B7026F2818EB5C0002ACF4 /* PlaylistViewController.swift in Sources */,
 				B3B7027D2818ECF70002ACF4 /* Artist.swift in Sources */,
 				B3B7025D2818EA2C0002ACF4 /* TabBarViewCollectionViewCell.swift in Sources */,
+				B3C2C735281B060F000CB960 /* Extension.swift in Sources */,
 				B3B7026D2818EB4F0002ACF4 /* PlayerViewController.swift in Sources */,
 				B3B702712818EB740002ACF4 /* SearchResultViewController.swift in Sources */,
 				B3B702752818EC3D0002ACF4 /* APICaller.swift in Sources */,
