@@ -30,13 +30,23 @@ class AuthViewController: UIViewController,WKNavigationDelegate {
         view.backgroundColor = .systemBackground
         webView.navigationDelegate = self
         view.addSubview(webView)
+        handler()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         webView.frame = view.bounds
+        
     }
 
 
-
+    func handler(){
+        guard AuthManger.shared.signInURL != nil, let url = AuthManger.shared.signInURL else { return }
+        webView.load(URLRequest(url:url))
+    }
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        guard let url = webView.url else { return }
+        guard let code = URLComponents(string: url.absoluteString)?.queryItems?.first(where: {$0.name == "code"})?.value else { return }
+    }
 }
