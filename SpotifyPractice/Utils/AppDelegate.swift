@@ -30,6 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.makeKeyAndVisible()
         self.window = window
         
+//        AuthManger.shared.refreshIfNeeded { success in
+//            print(success)
+//        }
+        
         print(AuthManger.shared.signInURL?.absoluteString)
         
         
