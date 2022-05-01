@@ -31,6 +31,7 @@
 		B3B7027D2818ECF70002ACF4 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B7027C2818ECF70002ACF4 /* Artist.swift */; };
 		B3C2C735281B060F000CB960 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2C734281B060F000CB960 /* Extension.swift */; };
 		B3C2C738281B06E4000CB960 /* Elements in Frameworks */ = {isa = PBXBuildFile; productRef = B3C2C737281B06E4000CB960 /* Elements */; };
+		B3D906C3281E6D52006F9CD2 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D906C2281E6D52006F9CD2 /* AuthResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		B3B7027A2818ECDA0002ACF4 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		B3B7027C2818ECF70002ACF4 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		B3C2C734281B060F000CB960 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		B3D906C2281E6D52006F9CD2 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				B3B702782818ECCA0002ACF4 /* Playlist.swift */,
 				B3B7027A2818ECDA0002ACF4 /* AudioTrack.swift */,
 				B3B7027C2818ECF70002ACF4 /* Artist.swift */,
+				B3D906C2281E6D52006F9CD2 /* AuthResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				B3B702792818ECCA0002ACF4 /* Playlist.swift in Sources */,
 				B3B702732818EBE10002ACF4 /* AuthManager.swift in Sources */,
 				B3B702772818EC570002ACF4 /* HapticManager.swift in Sources */,
+				B3D906C3281E6D52006F9CD2 /* AuthResponse.swift in Sources */,
 				B3B702462818E6AE0002ACF4 /* HomeViewController.swift in Sources */,
 				B3B7026B2818EB3F0002ACF4 /* ProfileViewController.swift in Sources */,
 				B3B702422818E6AE0002ACF4 /* AppDelegate.swift in Sources */,
