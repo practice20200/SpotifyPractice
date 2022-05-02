@@ -9,6 +9,8 @@ import Foundation
 final class AuthManger{
     static let shared = AuthManger()
     
+    var refreshingToken = false
+    
     struct Constants {
         static let clientID = " "
         static let clientSecret = ""
@@ -106,11 +108,41 @@ final class AuthManger{
         task.resume()
     }
     
+    private var onRefreshBlocks = [((String) -> Void)]()
+    
+    public func withValidToken(completion:@escaping(String) -> Void){
+        guard !refreshingToken else {
+            onRefreshBlocks.append(completion)
+            return
+        }
+        
+        if shouldRefreshToken{
+            refreshIfNeeded { [weak self] success in
+                if let token = self?.accessToken, success{
+                    completion(token)
+                }
+            }
+        }
+        else if let token = accessToken{
+            completion(token)
+        }
+    }
+    
     public func refreshIfNeeded(completion:@escaping(Bool) -> Void){
 //        guard shouldRefreshToken else {
 //            completion(true)
 //            return
 //        }
+        
+        guard !refreshingToken else {
+            return
+        }
+        
+        guard shouldRefreshToken else {
+            completion(true)
+            return
+        }
+        
         guard let refreshToken = self.refreshToken else {
             return
         }
@@ -118,6 +150,8 @@ final class AuthManger{
         guard let url = URL(string: Constants.tokenAPIURL) else {
             return
         }
+        
+        refreshingToken = true
         
         var components = URLComponents()
         components.queryItems = [
@@ -141,6 +175,7 @@ final class AuthManger{
         request.setValue("Basic \(base64String)", forHTTPHeaderField: "Authorization")
 
         let task = URLSession.shared.dataTask(with: request) {[weak self] data, _, error in
+            self?.refreshingToken = false
             guard let data = data, error == nil else {
                 completion(false)
                 return
@@ -149,6 +184,9 @@ final class AuthManger{
             
             do{
                 let result = try JSONDecoder().decode(AuthResponse.self, from: data)
+                self?.onRefreshBlocks.forEach{ $0(result.access_token) }
+                self?.onRefreshBlocks.removeAll()
+                
                 print("Success in function exchangeCodeForToken")
                 completion(true)
                 
