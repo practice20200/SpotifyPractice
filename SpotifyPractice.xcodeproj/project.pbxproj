@@ -32,6 +32,7 @@
 		B3C2C735281B060F000CB960 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2C734281B060F000CB960 /* Extension.swift */; };
 		B3C2C738281B06E4000CB960 /* Elements in Frameworks */ = {isa = PBXBuildFile; productRef = B3C2C737281B06E4000CB960 /* Elements */; };
 		B3D3DF4F28203B7B00521F1C /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D3DF4E28203B7B00521F1C /* UserProfile.swift */; };
+		B3D3DF5128204DB600521F1C /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D3DF5028204DB600521F1C /* UserImage.swift */; };
 		B3D906C3281E6D52006F9CD2 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D906C2281E6D52006F9CD2 /* AuthResponse.swift */; };
 		B3D906C5281E7A28006F9CD2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D906C4281E7A28006F9CD2 /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		B3B7027C2818ECF70002ACF4 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		B3C2C734281B060F000CB960 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		B3D3DF4E28203B7B00521F1C /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		B3D3DF5028204DB600521F1C /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
 		B3D906C2281E6D52006F9CD2 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		B3D906C4281E7A28006F9CD2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 				B3D906C2281E6D52006F9CD2 /* AuthResponse.swift */,
 				B3D906C4281E7A28006F9CD2 /* Constants.swift */,
 				B3D3DF4E28203B7B00521F1C /* UserProfile.swift */,
+				B3D3DF5028204DB600521F1C /* UserImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				B3B7025D2818EA2C0002ACF4 /* TabBarViewCollectionViewCell.swift in Sources */,
 				B3C2C735281B060F000CB960 /* Extension.swift in Sources */,
 				B3B7026D2818EB4F0002ACF4 /* PlayerViewController.swift in Sources */,
+				B3D3DF5128204DB600521F1C /* UserImage.swift in Sources */,
 				B3B702712818EB740002ACF4 /* SearchResultViewController.swift in Sources */,
 				B3B702752818EC3D0002ACF4 /* APICaller.swift in Sources */,
 				B3B702692818EB310002ACF4 /* SettingsViewController.swift in Sources */,
