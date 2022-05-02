@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            print(success)
 //        }
         
-        print(AuthManger.shared.signInURL?.absoluteString)
+        print(AuthManger.shared.signInURL?.absoluteString ?? "Error")
         
         
         

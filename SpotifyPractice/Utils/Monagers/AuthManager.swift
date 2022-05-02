@@ -83,7 +83,7 @@ final class AuthManger{
         
         request.setValue("Basic \(base64String)", forHTTPHeaderField: "Authorization")
 
-        let task = URLSession.shared.dataTask(with: request) {[weak self] data, _, error in
+        let task = URLSession.shared.dataTask(with: request) { data, _, error in
             guard let data = data, error == nil else {
                 completion(false)
                 return
