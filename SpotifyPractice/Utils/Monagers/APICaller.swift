@@ -33,10 +33,8 @@ struct APICaller {
                     completion(.failure(error))
                 }
             }
-            
-            
+            task.resume()
         }
-        
     }
     
     enum HTTPMethod: String{
