@@ -36,6 +36,8 @@
 		B3D906C3281E6D52006F9CD2 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D906C2281E6D52006F9CD2 /* AuthResponse.swift */; };
 		B3D906C5281E7A28006F9CD2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D906C4281E7A28006F9CD2 /* Constants.swift */; };
 		B3E9181E282232B500932011 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9181D282232B500932011 /* SettingModel.swift */; };
+		B3E91821282240D500932011 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B3E91820282240D500932011 /* SDWebImage */; };
+		B3E91823282240D500932011 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B3E91822282240D500932011 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E91821282240D500932011 /* SDWebImage in Frameworks */,
+				B3E91823282240D500932011 /* SDWebImageMapKit in Frameworks */,
 				B3C2C738281B06E4000CB960 /* Elements in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +229,8 @@
 			name = SpotifyPractice;
 			packageProductDependencies = (
 				B3C2C737281B06E4000CB960 /* Elements */,
+				B3E91820282240D500932011 /* SDWebImage */,
+				B3E91822282240D500932011 /* SDWebImageMapKit */,
 			);
 			productName = SpotifyPractice;
 			productReference = B3B7023E2818E6AE0002ACF4 /* SpotifyPractice.app */;
@@ -256,6 +262,7 @@
 			mainGroup = B3B702352818E6AE0002ACF4;
 			packageReferences = (
 				B3C2C736281B06E4000CB960 /* XCRemoteSwiftPackageReference "ElementKit" */,
+				B3E9181F282240D500932011 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = B3B7023F2818E6AE0002ACF4 /* Products */;
 			projectDirPath = "";
@@ -534,6 +541,14 @@
 				minimumVersion = 1.0.1;
 			};
 		};
+		B3E9181F282240D500932011 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -541,6 +556,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B3C2C736281B06E4000CB960 /* XCRemoteSwiftPackageReference "ElementKit" */;
 			productName = Elements;
+		};
+		B3E91820282240D500932011 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3E9181F282240D500932011 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		B3E91822282240D500932011 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3E9181F282240D500932011 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
