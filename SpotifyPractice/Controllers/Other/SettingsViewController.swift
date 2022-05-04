@@ -8,22 +8,89 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
+    
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        return tableView
+    }()
 
+    private var sections = [Section]()
+    
+    private func configureModels(){
+        sections.append(Section(title: "Profile", options: [Option(title: "View Profile", handler: { [weak self] in
+            DispatchQueue.main.async {
+                self?.viewProfile()
+            }
+        })]))
+        
+        sections.append(Section(title: "Account", options: [Option(title: "Sign out", handler: { [weak self] in
+            DispatchQueue.main.async {
+                self?.viewProfile()
+            }
+        })]))
+    }
+    
+    
+    
+    private func viewProfile(){
+        let vc = ProfileViewController()
+        vc.title = "Profile"
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        title = "Settings"
+        view.backgroundColor = .systemBackground
+        view.addSubview(tableView)
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        tableView.frame = view.bounds
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+
+
+extension SettingsViewController : UITableViewDelegate {
+    
+}
+
+extension SettingsViewController : UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
     }
-    */
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return sections[section].options.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let item = sections[indexPath.section].options[indexPath.row]
+        cell.textLabel?.text = item.title
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = sections[indexPath.section].options[indexPath.row]
+        item.handler()
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let item = sections[section]
+        return item.title
+    }
 }

@@ -35,6 +35,7 @@
 		B3D3DF5128204DB600521F1C /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D3DF5028204DB600521F1C /* UserImage.swift */; };
 		B3D906C3281E6D52006F9CD2 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D906C2281E6D52006F9CD2 /* AuthResponse.swift */; };
 		B3D906C5281E7A28006F9CD2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D906C4281E7A28006F9CD2 /* Constants.swift */; };
+		B3E9181E282232B500932011 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9181D282232B500932011 /* SettingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		B3D3DF5028204DB600521F1C /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
 		B3D906C2281E6D52006F9CD2 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		B3D906C4281E7A28006F9CD2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B3E9181D282232B500932011 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				B3D906C4281E7A28006F9CD2 /* Constants.swift */,
 				B3D3DF4E28203B7B00521F1C /* UserProfile.swift */,
 				B3D3DF5028204DB600521F1C /* UserImage.swift */,
+				B3E9181D282232B500932011 /* SettingModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E9181E282232B500932011 /* SettingModel.swift in Sources */,
 				B3B7025F2818EAA50002ACF4 /* SearchViewController.swift in Sources */,
 				B3D906C5281E7A28006F9CD2 /* Constants.swift in Sources */,
 				B3B702792818ECCA0002ACF4 /* Playlist.swift in Sources */,
