@@ -128,7 +128,7 @@ final class AuthManger{
         }
     }
     
-    public func refreshIfNeeded(completion:@escaping(Bool) -> Void){
+    public func refreshIfNeeded(completion:((Bool) -> Void)?){
 //        guard shouldRefreshToken else {
 //            completion(true)
 //            return
@@ -139,7 +139,7 @@ final class AuthManger{
         }
         
         guard shouldRefreshToken else {
-            completion(true)
+            completion?(true)
             return
         }
         
@@ -168,7 +168,7 @@ final class AuthManger{
         let data = basicToken.data(using: .utf8)
         guard let base64String = data?.base64EncodedString() else {
             print("Fail to get base64")
-            completion(false)
+            completion?(false)
             return
         }
         
@@ -177,7 +177,7 @@ final class AuthManger{
         let task = URLSession.shared.dataTask(with: request) {[weak self] data, _, error in
             self?.refreshingToken = false
             guard let data = data, error == nil else {
-                completion(false)
+                completion?(false)
                 return
                 
             }
@@ -188,12 +188,12 @@ final class AuthManger{
                 self?.onRefreshBlocks.removeAll()
                 
                 print("Success in function exchangeCodeForToken")
-                completion(true)
+                completion?(true)
                 
             }
             catch {
                 print(error.localizedDescription)
-                completion(false)
+                completion?(false)
             }
         }
         task.resume()
