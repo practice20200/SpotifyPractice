@@ -59,6 +59,25 @@ struct APICaller {
         }
     }
     
+    public func getFeaturedPlayLists(completion: @escaping((Result<FeaturedPlayListsResponse, Error>) -> Void)){
+        createRequest(with: URL(string: Constants.baseAPIURL), type: .GET) { request in
+            let task = URLSession.shared.dataTask(with: request) { data, _, error in
+                guard let data = data, error == nil else {
+                    completion(.failure(APIError.failedToGetData))
+                    return }
+                
+                do{
+                    let result = try JSONDecoder().decode(FeaturedPlayListsResponse.self, from: data)
+//                    print(result)
+                    completion(.success(result))
+                }
+                catch{
+                    completion(.failure(error))
+                }
+            }
+            task.resume()
+        }
+    }
     
     enum HTTPMethod: String{
         case GET
