@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B346B8F92824AD5900858651 /* NewReleasesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346B8F82824AD5900858651 /* NewReleasesResponse.swift */; };
 		B3B702422818E6AE0002ACF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B702412818E6AE0002ACF4 /* AppDelegate.swift */; };
 		B3B702442818E6AE0002ACF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B702432818E6AE0002ACF4 /* SceneDelegate.swift */; };
 		B3B702462818E6AE0002ACF4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B702452818E6AE0002ACF4 /* HomeViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B346B8F82824AD5900858651 /* NewReleasesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesResponse.swift; sourceTree = "<group>"; };
 		B3B7023E2818E6AE0002ACF4 /* SpotifyPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B702412818E6AE0002ACF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3B702432818E6AE0002ACF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				B3D3DF4E28203B7B00521F1C /* UserProfile.swift */,
 				B3D3DF5028204DB600521F1C /* UserImage.swift */,
 				B3E9181D282232B500932011 /* SettingModel.swift */,
+				B346B8F82824AD5900858651 /* NewReleasesResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				B3B7025D2818EA2C0002ACF4 /* TabBarViewCollectionViewCell.swift in Sources */,
 				B3C2C735281B060F000CB960 /* Extension.swift in Sources */,
 				B3B7026D2818EB4F0002ACF4 /* PlayerViewController.swift in Sources */,
+				B346B8F92824AD5900858651 /* NewReleasesResponse.swift in Sources */,
 				B3D3DF5128204DB600521F1C /* UserImage.swift in Sources */,
 				B3B702712818EB740002ACF4 /* SearchResultViewController.swift in Sources */,
 				B3B702752818EC3D0002ACF4 /* APICaller.swift in Sources */,
